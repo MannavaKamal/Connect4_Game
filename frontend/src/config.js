@@ -1,3 +1,3 @@
 export const config = {
-     url: "http://192.168.1.7:8081"
+     url: "https://connect4-game-b45r.onrender.com"
 };
