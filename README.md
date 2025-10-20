@@ -12,7 +12,7 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 - Start the development server: npm run dev
 
 
-   ## 🔧 Backend Setup
+## 🔧 Backend Setup
 - Download and install Golang version 1.25.3
 - Navigate to the backend directory: cd path/Connect4_Game/middleware_golang/
 - Verify Golang installation: go version
