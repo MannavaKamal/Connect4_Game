@@ -5,6 +5,7 @@ import (
     // "github.com/MannavaKamal/emitterassignment/handlers"
     "github.com/gin-gonic/gin"
     "time"
+	"fmt"
     
 	
     "os"
@@ -58,6 +59,7 @@ port := os.Getenv("PORT")
 if port == "" {
     port = "8080" // fallback for local testing
 }
+	fmt.Println(port)
 r.Run(":" + port)
 
   
