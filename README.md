@@ -1,7 +1,6 @@
 
-# Connect4 game[Abblix/Oidc.Server](https://github.com/Abblix/Oidc.Server#readme)(https://connect4-game-delta.vercel.app/)
-> A curated list of awesome READMEs
-> 
+# Connect4 game(https://connect4-game-delta.vercel.app/)
+
 
 A modern implementation of the classic Connect 4 game featuring real-time multiplayer gameplay and AI opponent, built with React + Vite frontend and Golang backend.
    
@@ -55,4 +54,4 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 
 3. Block your opponent's potential winning moves
 
-4.Create multiple winning opportunities simultaneously
+4. Create multiple winning opportunities simultaneously
