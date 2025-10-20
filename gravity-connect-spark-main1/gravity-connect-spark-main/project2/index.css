@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 17%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 17%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 33% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 212 27% 84%;
+
+    --radius: 1rem;
+
+    /* Game-specific colors */
+    --game-bg: 222 47% 11%;
+    --board-frame: 217 33% 17%;
+    --slot-empty: 215 28% 25%;
+    
+    --player-red: 348 83% 61%;
+    --player-yellow: 45 93% 58%;
+    --player-blue: 217 91% 60%;
+    --player-green: 142 71% 45%;
+    
+    /* Shadows & glows */
+    --shadow-disc: 0deg 0% 0% / 0.3;
+    --glow-red: 348 83% 61% / 0.6;
+    --glow-yellow: 45 93% 58% / 0.6;
+    --glow-blue: 217 91% 60% / 0.6;
+    --glow-green: 142 71% 45% / 0.6;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
