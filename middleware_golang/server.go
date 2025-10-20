@@ -53,7 +53,7 @@ func main() {
 	 
 
     // Run server
-    r.Run("192.168.1.7:8081")
+    r.Run(":8081")
 }
 
 // wsHandler upgrades the HTTP connection and sets up the client registration.
