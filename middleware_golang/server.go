@@ -7,7 +7,7 @@ import (
     "time"
     
 	
-    
+    "os"
     "github.com/MannavaKamal/emitterassignment/db_restAPI"
     "github.com/MannavaKamal/emitterassignment/websocket"
     "github.com/gin-contrib/cors"
@@ -53,7 +53,14 @@ func main() {
 	 
 
     // Run server
-    r.Run(":8081")
+	
+port := os.Getenv("PORT")
+if port == "" {
+    port = "8080" // fallback for local testing
+}
+r.Run(":" + port)
+
+  
 }
 
 // wsHandler upgrades the HTTP connection and sets up the client registration.
