@@ -14,7 +14,7 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 
   
 - ## 🔧 Backend Setup
--Download and install Golang version 1.25.3
+- Download and install Golang version 1.25.3
 - Navigate to the backend directory: cd path/Connect4_Game/middleware_golang/
 - Verify Golang installation: go version
 - Run the server: go run server.go
@@ -26,21 +26,21 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 One vs One: Play against another human opponent
 One vs Bot: Play against an AI opponent
 
--Getting Started
-=Authentication: Login or sign up using Google authentication
+- Getting Started
+ 1.Authentication: Login or sign up using Google authentication
 
--Start Game: Click "Start Game" after successful authentication
+ 2. Start Game: Click "Start Game" after successful authentication
 
--Color Selection: Choose your preferred color and your opponent's color
+ 3. Color Selection: Choose your preferred color and your opponent's color
 
--Enter Game: Click "Enter" to begin playing
+  4. Enter Game: Click "Enter" to begin playing
 
--Matchmaking System
+- Matchmaking System
 1. If another player is waiting within 30 seconds, a 1vs1 match will start automatically
 
 2. If no opponent is found within 30 seconds, you'll be matched with an AI bot
 
--Game Rules & Features
+- Game Rules & Features
 1. Win Condition: Connect four of your colored discs horizontally, vertically, or diagonally before your opponent
 
 2. Disconnection Policy: If disconnected during a game, you have 30 seconds to reconnect, otherwise your opponent wins automatically
@@ -51,7 +51,7 @@ One vs Bot: Play against an AI opponent
 
 5. Real-time Gameplay: Experience smooth, real-time game interactions
 
--Winning Strategies
+- Winning Strategies
 1. Plan both offensive and defensive moves
 
 2. Watch for potential vertical, horizontal, and diagonal connections
