@@ -20,41 +20,41 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 
   
 ## 🎮 Game Instructions
-Download and install Golang version 1.25.3
-    ## Game Modes
-     -One vs One: Play against another human opponent
-     -One vs Bot: Play against an AI opponent
+-Download and install Golang version 1.25.3
+- Game Modes
+One vs One: Play against another human opponent
+One vs Bot: Play against an AI opponent
 
-Getting Started
-Authentication: Login or sign up using Google authentication
+-Getting Started
+=Authentication: Login or sign up using Google authentication
 
-Start Game: Click "Start Game" after successful authentication
+-Start Game: Click "Start Game" after successful authentication
 
-Color Selection: Choose your preferred color and your opponent's color
+-Color Selection: Choose your preferred color and your opponent's color
 
-Enter Game: Click "Enter" to begin playing
+-Enter Game: Click "Enter" to begin playing
 
-Matchmaking System
-If another player is waiting within 30 seconds, a 1vs1 match will start automatically
+-Matchmaking System
+1. If another player is waiting within 30 seconds, a 1vs1 match will start automatically
 
-If no opponent is found within 30 seconds, you'll be matched with an AI bot
+2. If no opponent is found within 30 seconds, you'll be matched with an AI bot
 
-Game Rules & Features
-Win Condition: Connect four of your colored discs horizontally, vertically, or diagonally before your opponent
+-Game Rules & Features
+1. Win Condition: Connect four of your colored discs horizontally, vertically, or diagonally before your opponent
 
-Disconnection Policy: If disconnected during a game, you have 30 seconds to reconnect, otherwise your opponent wins automatically
+2. Disconnection Policy: If disconnected during a game, you have 30 seconds to reconnect, otherwise your opponent wins automatically
 
-Game History: All your game data is recorded and displayed in your personal play history
+3. Game History: All your game data is recorded and displayed in your personal play history
 
-Leaderboard: Global rankings are displayed on the home page
+4. Leaderboard: Global rankings are displayed on the home page
 
-Real-time Gameplay: Experience smooth, real-time game interactions
+5. Real-time Gameplay: Experience smooth, real-time game interactions
 
-Winning Strategies
-Plan both offensive and defensive moves
+-Winning Strategies
+1. Plan both offensive and defensive moves
 
-Watch for potential vertical, horizontal, and diagonal connections
+2. Watch for potential vertical, horizontal, and diagonal connections
 
-Block your opponent's potential winning moves
+3. Block your opponent's potential winning moves
 
-Create multiple winning opportunities simultaneously
+4.Create multiple winning opportunities simultaneously
