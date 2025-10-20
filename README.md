@@ -23,17 +23,17 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 ## 🎮 Game Instructions
 
 - Game Modes
-One vs One: Play against another human opponent
-One vs Bot: Play against an AI opponent
+    1. One vs One: Play against another human opponent
+    2. One vs Bot: Play against an AI opponent
 
 - Getting Started
- 1.Authentication: Login or sign up using Google authentication
+       1.Authentication: Login or sign up using Google authentication
 
- 2. Start Game: Click "Start Game" after successful authentication
+       2. Start Game: Click "Start Game" after successful authentication
 
- 3. Color Selection: Choose your preferred color and your opponent's color
+      3. Color Selection: Choose your preferred color and your opponent's color
 
-  4. Enter Game: Click "Enter" to begin playing
+      4. Enter Game: Click "Enter" to begin playing
 
 - Matchmaking System
 1. If another player is waiting within 30 seconds, a 1vs1 match will start automatically
