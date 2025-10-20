@@ -14,13 +14,14 @@ A modern implementation of the classic Connect 4 game featuring real-time multip
 
   
 - ## 🔧 Backend Setup
+-Download and install Golang version 1.25.3
 - Navigate to the backend directory: cd path/Connect4_Game/middleware_golang/
 - Verify Golang installation: go version
 - Run the server: go run server.go
 
   
 ## 🎮 Game Instructions
--Download and install Golang version 1.25.3
+
 - Game Modes
 One vs One: Play against another human opponent
 One vs Bot: Play against an AI opponent
