@@ -181,8 +181,9 @@ const GameBoard = ({
   useEffect(() => {
     if(currentPlayer === 2 ){
       console.log("from opponent")
-      console.log(col)
-        dropDisc(col)
+     console.log("unique number I generated "+moveTrigger)
+      console.log("col for player 2 = "+col)
+      if(col!=-1) dropDisc(col)
     }
     // if (mode === 'bot' && currentPlayer === 2 && !isAnimating && getBotMove) {
     //   const timer = setTimeout(() => {
