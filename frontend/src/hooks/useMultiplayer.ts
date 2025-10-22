@@ -46,7 +46,7 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
           navigate("/")
           return
         }  
-    const socket = new WebSocket(`wss://connect4-game-b45r.onrender.com/ws?email=${encodeURIComponent(userData.email)}&username=${encodeURIComponent(userData.username)}`);
+    const socket = new WebSocket(`ws://127.0.0.1:8081/ws?email=${encodeURIComponent(userData.email)}&username=${encodeURIComponent(userData.username)}`);
     
     socket.onopen = () => {
       console.log("✅ Connected to server");
@@ -65,11 +65,11 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
         const condata = res
         setGameId(condata.gameId)
         if(condata.chance === 0){
-          setMoveTrigger((t) => t + 1);
+          setMoveTrigger((t) => t + generateRandom());
         setPosition(2)              
         setCurrentPlayer(2)
         }
-        setMoveTrigger((t) => t + 1);
+        setMoveTrigger((t) => t + generateRandom());
         setPlayer2(condata.opponentName)
        clearTimeout(timerRef.current)
         console.log(timerRef.current)
@@ -83,17 +83,17 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
     }else if(res.type === 91){
       console.log(res)
           if(res.chance === -1 ){
-            setMoveTrigger((t) => t + 1);
+            setMoveTrigger((t) => t + generateRandom());
             console.log("in -1")
              setCol(res.colIndex)
           }
      else if(res.chance == 1){ 
-      setMoveTrigger((t) => t + 1);
+      setMoveTrigger((t) => t + generateRandom());
       console.log("in 1") 
        setCol(-1)            
         setCurrentPlayer(1)
       } else if(res.chance == 0){
-        setMoveTrigger((t) => t + 1);
+        setMoveTrigger((t) => t + generateRandom());
         console.log("in 0")
         setCol(-1)
         setCurrentPlayer(2)
@@ -107,7 +107,7 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
     else if(res.type === 100){
      console.log("you won the game")
      alert("client disconencted so you won the game")
-     navigate("/")
+     //navigate("/")
     }
       
     };
@@ -141,7 +141,7 @@ console.log("after onclose")
     setState({
       mode: 'waiting',
       opponentConnected: false,
-      timeRemaining: 30,
+      timeRemaining: 5,
       opponentMove: null,
     });
 
@@ -174,6 +174,12 @@ console.log("after onclose")
 
     connectWebSocket();
   }, [connectWebSocket]);
+
+   const generateRandom = () => {
+    // Generate a random 6-digit number between 100000 and 999999
+    const random = Math.floor(100000 + Math.random() * 900000);
+    return random;
+  };
 
   const sendMove = useCallback((column: number) => {
     if (state.mode === 'multiplayer' && wsRef.current) {
