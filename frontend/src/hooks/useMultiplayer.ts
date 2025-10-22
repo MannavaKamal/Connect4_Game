@@ -141,7 +141,7 @@ console.log("after onclose")
     setState({
       mode: 'waiting',
       opponentConnected: false,
-      timeRemaining: 5,
+      timeRemaining: 30,
       opponentMove: null,
     });
 
