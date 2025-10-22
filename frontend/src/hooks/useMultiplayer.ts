@@ -83,16 +83,19 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
     }else if(res.type === 91){
       console.log(res)
           if(res.chance === -1 ){
+          console.log(generateRandom())
             setMoveTrigger((t) => t + generateRandom());
             console.log("in -1")
              setCol(res.colIndex)
           }
      else if(res.chance == 1){ 
+        console.log(generateRandom())
       setMoveTrigger((t) => t + generateRandom());
       console.log("in 1") 
        setCol(-1)            
         setCurrentPlayer(1)
       } else if(res.chance == 0){
+        console.log(generateRandom())
         setMoveTrigger((t) => t + generateRandom());
         console.log("in 0")
         setCol(-1)
