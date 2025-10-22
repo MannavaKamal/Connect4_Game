@@ -46,7 +46,7 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
           navigate("/")
           return
         }  
-    const socket = new WebSocket(`ws://connect4-game-b45r.onrender.com/ws?email=${encodeURIComponent(userData.email)}&username=${encodeURIComponent(userData.username)}`);
+    const socket = new WebSocket(`wss://connect4-game-b45r.onrender.com/ws?email=${encodeURIComponent(userData.email)}&username=${encodeURIComponent(userData.username)}`);
     
     socket.onopen = () => {
       console.log("✅ Connected to server");
