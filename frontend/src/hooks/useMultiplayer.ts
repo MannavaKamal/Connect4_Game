@@ -92,7 +92,7 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
             console.log("I had sent the colindex")
           }
      else if(res.chance == 1){ 
-      setMoveTrigger((t) => {
+     // setMoveTrigger((t) => {
        //  const rv = t + generateRandom()
        //  console.log("in 2r "+rv)
        //  return rv });
