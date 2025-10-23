@@ -86,31 +86,29 @@ export const useMultiplayer = (onOpponentMove?: (column: number) => void) => {
             setMoveTrigger((t) => {
         const rv = t + generateRandom()
          console.log("in 1r "+rv)
-        return rv });
-           
-             setCol(res.colIndex)
-            console.log("I had sent the colindex")
+        return rv });           
+             setCol(res.colIndex)          
           }
      else if(res.chance == 1){ 
-     setMoveTrigger((t) => {
-        const rv = t + generateRandom()
-        console.log("in 2r "+rv)
-        return rv });
-       setCol(-1)            
-       setMoveTrigger((t) => {
-        const rv = t + generateRandom()
-         console.log("in 3r "+rv)
-        return rv });
-        console.log("chance is 1")
+     // setMoveTrigger((t) => {
+     //    const rv = t + generateRandom()
+     //    console.log("in 2r "+rv)
+     //    return rv });
+     //   setCol(-1)            
+     //   setMoveTrigger((t) => {
+     //    const rv = t + generateRandom()
+     //     console.log("in 3r "+rv)
+     //    return rv });
+     //    console.log("chance is 1")
       } else if(res.chance == 0){
-       setMoveTrigger((t) => {
-        const rv = t + generateRandom()
-         console.log("in 4r "+rv)
-        return rv });
-        console.log("in 0")
-        setCol(-1)
-        setCurrentPlayer(2)
-        console.log("chance is 1")
+       // setMoveTrigger((t) => {
+       //  const rv = t + generateRandom()
+       //   console.log("in 4r "+rv)
+       //  return rv });
+       //  console.log("in 0")
+       //  setCol(-1)
+       //  setCurrentPlayer(2)
+       //  console.log("chance is 1")
       }
     }else if(res.type === 22){
       if(res.chance === 1){
