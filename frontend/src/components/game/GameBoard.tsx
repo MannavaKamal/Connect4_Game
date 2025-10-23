@@ -158,7 +158,7 @@ const GameBoard = ({
     }
       
       // Notify parent of move
-      onMove?.(colIndex, currentPlayer);
+     // onMove?.(colIndex, currentPlayer);
       // Wait for animation to complete
       setTimeout(() => {
         if (checkWin(newBoard, targetRow, colIndex, color)) {
@@ -195,7 +195,7 @@ const GameBoard = ({
       
     //   return () => clearTimeout(timer);
     // }
-  }, [currentPlayer, mode, isAnimating, board, getBotMove, dropDisc,col,moveTrigger]);
+  }, [moveTrigger]);
   //[currentPlayer, mode, isAnimating, board, getBotMove, dropDisc,col]);
 
   const isColumnFull = (colIndex: number) => {
